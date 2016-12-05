@@ -1,18 +1,17 @@
 #### JavaScript研修
-* webアプリケーションのしくみ
-  * クライアントとサーバ
-  * webページとは
+* webアプリケーション
+  * webアプリケーションとは
+  * webアプリケーションのしくみ
+  * webページの構成
 * html
   * htmlとは
-  * htmlでできること
-  * htmlを書いてみる
+  * htmlファイルの構造
+  * よく使うタグ
 * css
   * cssとは
-  * cssでできること
   * cssを書いてみる
 * JavaScript
   * JavaScriptとは
-  * JavaScriptでできること
   * JavaScriptを書いてみる
 * jQuery
   * jQueryとは
