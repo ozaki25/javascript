@@ -12,7 +12,11 @@
   * cssを書いてみる
 * JavaScript
   * JavaScriptとは
-  * JavaScriptを書いてみる
+  * 動作環境を整える
+  * JavaScriptの基本構文
 * jQuery
   * jQueryとは
-  * jQueryのコードを書く
+  * jQueryを書く準備
+  * DOM要素
+  * セレクタ
+  * 属性の操作
