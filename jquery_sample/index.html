@@ -1,0 +1,78 @@
+<!DOCTYOE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jquery method sample</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>jQueryのメソッドのサンプル</h1>
+      <hr />
+      <h2>イベント</h2>
+      <p>ユーザが行った操作を検知して処理を動かすことができる</p>
+      <h3>マウスの操作</h3>
+      <h4>click</h4>
+      <p>クリックを検知する</p>
+      <div>サンプル</div>
+      <button id="event-click">クリックするとアラートがでます</button>
+      <div>HTML</div>
+      <pre>&lt;button id="event-click"&gt;クリックするとアラートがでます&lt;/button&gt;</pre>
+      <div>JavaScript</div>
+      <pre>
+$('#event-click').click(function() {
+  alert('クリック！');
+});
+      </pre>
+      <h4>hover</h4>
+      <p>カーソルをかざしたことを検知する</p>
+      <h3>キーボードの操作</h3>
+      <h4>keypress</h4>
+      <h3>フォームの操作</h3>
+      <h4>focus</h4>
+      <h4>change</h4>
+      <h4>blur</h4>
+      <h4>select</h4>
+      <hr />
+      <h2>属性の操作</h2>
+      <h3>classの操作</h3>
+      <h4>addClass</h4>
+      <h4>removeClass</h4>
+      <h4>hasClass</h4>
+      <h3>valueの操作</h3>
+      <h4>val</h4>
+      <h3>あらゆる属性の操作</h3>
+      <h4>attr</h4>
+      <h4>removeAttr</h4>
+      <hr />
+      <h2>DOMの探索</h2>
+      <h3>親要素を探索</h3>
+      <h4>parent</h4>
+      <h4>parents</h4>
+      <h4>closest</h4>
+      <h3>子要素を探索</h3>
+      <h4>children</h4>
+      <h4>find</h4>
+      <h3>next</h3>
+      <h4>prev</h4>
+      <h4>siblings</h4>
+      <hr />
+      <h2>DOMの操作</h2>
+      <h3>DOMの追加</h3>
+      <h4>append</h4>
+      <h4>prepend</h4>
+      <h4>after</h4>
+      <h4>before</h4>
+      <h3>DOMの取得/変更</h3>
+      <h4>html</h4>
+      <h4>text</h4>
+      <h3>DOMの削除</h3>
+      <h4>empty</h4>
+      <h4>remove</h4>
+    </div>
+  </body>
+</html>
+
