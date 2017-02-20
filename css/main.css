@@ -24,3 +24,7 @@
 .submit-button {
     padding: 5px;
 }
+
+.error-message {
+    color: red;
+}
