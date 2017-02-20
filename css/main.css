@@ -1,0 +1,26 @@
+.body {
+    background-color: lavender;
+}
+
+.container {
+    margin: 0 5%;
+    background-color: white;
+    padding: 15px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-content {
+    height: 100px;
+    width: 70%;
+}
+
+.submit-button {
+    padding: 5px;
+}

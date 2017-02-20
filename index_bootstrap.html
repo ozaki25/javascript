@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+<title>演習問題1</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<div class="container">
+  <h1>JavaScript研修のお問い合わせフォーム</h1>
+  <p>JavaScript研修に関するお問い合わせはこちらのフォームからお願いします。</p>
+
+  <form>
+    <div class="form-group">
+      <label class="control-label">お名前</label>
+      <input type="text" name="name" class="form-control" value="ポー太郎">
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">年次</label>
+      <div>
+        <input id="annual-1" type="radio" name="annual" value="1">
+        <label for="annual-1">1年目</label>
+      </div>
+      <div>
+        <input id="annual-2" type="radio" name="annual" value="2">
+        <label for="annual-2">2年目〜5年目</label>
+      </div>
+      <div>
+        <input id="annual-3" type="radio" name="annual" value="3">
+        <label for="annual-3">6年目〜10年目</label>
+      </div>
+      <div>
+        <input id="annual-4" type="radio" name="annual" value="4">
+        <label for="annual-4">11年目〜</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">関連する分野</label>
+      <div>
+        <input id="area-1" type="checkbox" name="area" value="1">
+        <label for="area-1">Webアプリケーション</label>
+      </div>
+      <div>
+        <input id="area-2" type="checkbox" name="area" value="2">
+        <label for="area-2">HTML</label>
+      </div>
+      <div>
+        <input id="area-3" type="checkbox" name="area" value="3">
+        <label for="area-3">CSS</label>
+      </div>
+      <div>
+        <input id="area-4" type="checkbox" name="area" value="4">
+        <label for="area-4">JavaScript</label>
+      </div>
+      <div>
+        <input id="area-5" type="checkbox" name="area" value="5">
+        <label for="area-5">jQuery</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">お問い合わせの種別</label>
+      <select name="category" class="form-control">
+        <option value="1">研修内容の不明点について</option>
+        <option value="2">実装方法についてのご相談</option>
+        <option value="3">教材の誤植のご連絡</option>
+        <option value="4">その他</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">お問い合わせの内容</label>
+      <textarea name="content" class="form-control"></textarea>
+    </div>
+
+    <input type="submit" value="送信" class="btn btn-default">
+  </form>
+</div>

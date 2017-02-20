@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+<title>演習問題1</title>
+
+<body>
+  <div>
+    <h1>JavaScript研修のお問い合わせフォーム</h1>
+    <p>JavaScript研修に関するお問い合わせはこちらのフォームからお願いします。</p>
+
+    <form>
+      <div>
+        <label>お名前</label>
+        <br>
+        <input type="text" name="name" value="ポー太郎">
+      </div>
+
+      <div>
+        <label>年次</label>
+        <div>
+          <input id="annual-1" type="radio" name="annual" value="1">
+          <label for="annual-1">1年目</label>
+        </div>
+        <div>
+          <input id="annual-2" type="radio" name="annual" value="2" checked>
+          <label for="annual-2">2年目〜5年目</label>
+        </div>
+        <div>
+          <input id="annual-3" type="radio" name="annual" value="3">
+          <label for="annual-3">6年目〜10年目</label>
+        </div>
+        <div>
+          <input id="annual-4" type="radio" name="annual" value="4">
+          <label for="annual-4">11年目〜</label>
+        </div>
+      </div>
+
+      <div>
+        <label>関連する分野</label>
+        <div>
+          <input id="area-1" type="checkbox" name="area" value="1">
+          <label for="area-1">Webアプリケーション</label>
+        </div>
+        <div>
+          <input id="area-2" type="checkbox" name="area" value="2">
+          <label for="area-2">HTML</label>
+        </div>
+        <div>
+          <input id="area-3" type="checkbox" name="area" value="3">
+          <label for="area-3">CSS</label>
+        </div>
+        <div>
+          <input id="area-4" type="checkbox" name="area" value="4" checked>
+          <label for="area-4">JavaScript</label>
+        </div>
+        <div>
+          <input id="area-5" type="checkbox" name="area" value="5" checked>
+          <label for="area-5">jQuery</label>
+        </div>
+      </div>
+
+      <div>
+        <label>お問い合わせの種別</label>
+        <br>
+        <select name="category">
+          <option value="1">研修内容の不明点について</option>
+          <option value="2" selected>実装方法についてのご相談</option>
+          <option value="3">教材の誤植のご連絡</option>
+          <option value="4">その他</option>
+        </select>
+      </div>
+
+      <div>
+        <label>お問い合わせの内容</label>
+        <br>
+        <textarea name="content"></textarea>
+      </div>
+
+      <input type="submit" value="送信">
+    </form>
+  </div>
+</body>
