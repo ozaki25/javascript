@@ -12,7 +12,7 @@ window.onload = function() {
         for(var i = 0; i < targets.length; i++) {
             var target = targets[i];
             var value = target.value;
-            var displayedMessage = target.parentNode.getElementsByClassName('error-message')[0];
+            var displayedMessage = target.parentNode.getElementsByClassName('error-message');
 
             if(!value) {
                 invalid(target, displayedMessage);
@@ -23,7 +23,7 @@ window.onload = function() {
     }
 
     function invalid(target, displayedMessage) {
-        if(!displayedMessage) {
+        if(!displayedMessage.length) {
             var message = document.createElement('div');
             var text = document.createTextNode('入力して下さい')
             message.appendChild(text);
@@ -34,8 +34,8 @@ window.onload = function() {
     }
 
     function valid(target, displayedMessage) {
-        if(displayedMessage) {
-            target.parentNode.removeChild(displayedMessage);
+        if(displayedMessage.length) {
+            target.parentNode.removeChild(displayedMessage[0]);
         }
     }
 };

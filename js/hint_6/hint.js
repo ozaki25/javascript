@@ -9,9 +9,9 @@ window.onload = function() {
             var value = target.value;
 
             if(!value) {
-                var displayedMessage = target.parentNode.getElementsByClassName('error-message')[0];
+                var displayedMessage = target.parentNode.getElementsByClassName('error-message');
 
-                if(!displayedMessage) {
+                if(!displayedMessage.length) {
                     var message = document.createElement('div');
                     var text = document.createTextNode('入力して下さい')
                     message.appendChild(text);

@@ -7,10 +7,10 @@ window.onload = function() {
         for(var i = 0; i < targets.length; i++) {
             var target = targets[i];
             var value = target.value;
-            var displayedMessage = target.parentNode.getElementsByClassName('error-message')[0];
+            var displayedMessage = target.parentNode.getElementsByClassName('error-message');
 
             if(!value) {
-                if(!displayedMessage) {
+                if(!displayedMessage.length) {
                     var message = document.createElement('div');
                     var text = document.createTextNode('入力して下さい')
                     message.appendChild(text);
@@ -19,8 +19,8 @@ window.onload = function() {
                     target.parentNode.appendChild(message);
                 }
             } else {
-                if(displayedMessage) {
-                    target.parentNode.removeChild(displayedMessage);
+                if(displayedMessage.length) {
+                    target.parentNode.removeChild(displayedMessage[0]);
                 }
             }
         }
